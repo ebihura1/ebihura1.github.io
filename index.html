@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ebi-Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #001f3f; /* 暗い青色 */
+            color: white; /* 文字を白色に */
+        }
+        header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            color: black; /* ヘッダーの文字を黒色に */
+        }
+        .left-corner {
+            position: absolute;
+            top: 150px; /* さらに下にずらす */
+            left: 10px;
+            border: 2px solid black; /* 黒い線で囲む */
+            padding: 10px;
+        }
+        .left-corner p {
+            font-size: 1.5em; /* 文字を大きくする */
+        }
+        .left-corner button {
+            display: block;
+            margin-top: 10px;
+            background-color: #007bff; /* ボタンの背景色 */
+            color: white; /* ボタンの文字色 */
+            border: none;
+            padding: 15px 30px; /* ボタンを大きくする */
+            cursor: pointer;
+            font-size: 1.2em; /* ボタンの文字を大きくする */
+        }
+        .left-corner button:hover {
+            background-color: #0056b3; /* ホバー時の色 */
+        }
+        .discord-icon {
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ebi-Tool</h1>
+    </header>
+    <div class="left-corner">
+        <p>WEBHook</p>
+        <button onclick="openLink()">Download</button>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Discord_logo.svg" alt="Discord" class="discord-icon" onclick="openDiscord()">
+    </div>
+
+    <script>
+        function openLink() {
+            window.location.href = "https://github.com/ebihura1/WEB-Hook";
+        }
+        function openDiscord() {
+            window.location.href = "https://discord.gg/3UNhDJWCMQ";
+        }
+    </script>
+</body>
+</html>
